@@ -1,0 +1,65 @@
+<div class="col-md-6 col-md-offset-3 adding-form-box">
+  <div class="col-md-12 box-heading-container">
+    <p>Agent Detail</p>
+  </div>
+  <div class="col-md-12 box-value-container">
+  <div class="col-md-12 form-group">
+    <label for="agent-name">
+      Agent Name
+    </label>
+    <input type="text" [attr.disabled]="editStatus" name="agent-name" class="form-control" id="agent-name" placeholder="Agent" />
+
+  </div>
+  <div class="col-md-12 form-group">
+      <label for="branch-name">
+        Applicant Name
+      </label>
+      <input type="text" [attr.disabled]="editStatus" name="applicant-name" class="form-control" id="applicant-name" placeholder="Applicant" />
+  
+    </div>
+    <div class="col-md-12 form-group">
+        <label for="country-code">
+          Email
+        </label>
+        <input type="email" [attr.disabled]="editStatus" name="email" class="form-control" id="email" placeholder="email">
+    
+      </div>
+      <div class="col-md-12 form-group">
+        <label for="country-code">
+          Phone Number
+        </label>
+        <input type="text" [attr.disabled]="editStatus" name="phone-number" class="form-control" id="phone-number" placeholder="Phone Number">
+    
+      </div>
+      <div class="col-md-12 form-group">
+        <label for="country-code">
+          Address
+        </label>
+        <textarea name="address" [attr.disabled]="editStatus" class="form-control" id="address"></textarea>
+    
+      </div>
+      <div class="col-md-12 form-group">
+        <label for="country-code">
+          Date Of Birth
+        </label>
+        <input type="date" [attr.disabled]="editStatus" name="date-of-birth" class="form-control" id="date-of-birth">
+    
+      </div>
+      <div class="col-md-12 form-group">
+        <label for="country-code">
+          Expense
+        </label>
+        <input type="text" [attr.disabled]="editStatus" name="expense" class="form-control" id="expense" placeholder="Expense">
+    
+      </div>
+      <div class="col-md-12 form-group">
+        <label for="country-code">
+          Document
+        </label>
+    
+      </div>
+        <div class="col-md-12 form-group">
+           <a routerLink="../" class="btn btn-fps" routerLinkClass="active" >Cancel</a>
+        </div>
+        </div>
+</div>

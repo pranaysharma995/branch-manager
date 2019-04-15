@@ -1,0 +1,38 @@
+<!-- opening of top nav-->
+<div class="row top-nav">
+  <div class="col-md-3 logo-container">
+    <a routerLink="/" class="logo" routerLinkClass="active">FPS</a>
+  </div>
+  <div class="col-md-9 pagelink-container">
+    <ul class="list list-inline pagelink-list">
+      <li><a routerLink="/" routerLinkClass="active">Home</a></li>
+      <li><a routerLink="login" routerLinkClass="active">Login</a></li>
+      <li><button type="button" class="btn btn-fps green">Green</button></li>
+      <li><button type="button" class="btn btn-fps yellow">Yellow</button></li>
+    </ul>
+  </div>
+
+</div>
+<!-- closing of top nav-->
+<!-- opening of page content container -->
+<div class="row page-content-container">
+
+  <!-- opening of sildebar container-->
+  <div class="col-md-3 sildebar-container">
+    <ul class="list sidebar-list">
+      <li class="link"> <a routerLink="profileSetting" routerLinkClass="active" >Dashboard</a></li>
+      <li class="link"><a routerLink="agents" routerLinkClass="active">All Agents</a></li>
+      <li class="link"><a routerLink="applicants" routerLinkClass="active">Applicant Lists</a></li>
+    </ul>
+
+  </div>
+  <!-- closing of sidebar container-->
+  <!-- opening of custom content -->
+  <div class="col-md-9 content-container">
+
+     <router-outlet></router-outlet>
+    
+  </div>
+  <!-- closing of custom content -->
+
+</div>

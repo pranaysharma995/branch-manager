@@ -1,1 +1,165 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root{
+    --blue:#E91E63;
+    --dark-blue:#A90034;
+    --light-blue:#E499A4;
+    --lighter-blue:#FFE3EA;
+    --light-gray:#aba9bb;
+    --dark-gray:#464555;
+    --gray:#D1D1D1;
+    --black:#303030;
+}
+ul{margin: 0px;padding: 0px;}
+.top-nav{
+    background-color: var(--blue);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 5;
+    overflow: hidden;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);;
+}
+.logo{
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.logo:hover,.logo:focus,.logo:active{
+    text-decoration: none;
+    opacity: 0.8;;
+}
+.pagelink-list li{
+    padding: 12px 18px;
+    position: relative;
+}
+.sidebar-list > li{
+    position: relative;
+}
+.sidebar-list > .dropdown::after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-size: 12px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    color: #fff;
+    z-index: 3;
+}
+.sidebar-list > .dropdown.active::after{
+    transform: rotateY('180deg');
+    -webkit-transform: rotateY('180deg');
+    -moz-transform: rotateY('180deg');
+}
+.pagelink-list li a{
+    color: #fff;
+    padding: 10px 15px;
+}
+.pagelink-list li a:hover,.pagelink-list li a:focus,.pagelink-list li a:active{
+    text-decoration: none;
+    background-color:var(--dark-blue);
+}
+.sildebar-container{
+    background-color: var(--blue);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 0px;
+}
+.content-container,.sildebar-container{
+    padding-top: 60px;
+}
+.sidebar-list{
+    padding: 0px 0px;
+    list-style: none;
+}
+.page-content-container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-list li{
+    color: #fff;
+    padding: 10px;
+}
+.sidebar-list li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.sidebar-list > li > a:hover,.sidebar-list > li > a:focus,.sidebar-list > li > a:active{
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar-list > .dropdown:hover,.sidebar-list > .link:hover{
+    background-color: var(--dark-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdown.active{
+    background-color:var(--dark-blue);
+}
+.dropdown-list a:hover,.dropdown-list a:focus,.dropdown-list a:active{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;;
+}
+.dropdown-list a{
+    color: #fff;
+}
+.btn-fps{
+    background-color:var(--blue);
+    cursor: pointer;
+    color: #fff;
+    margin-right: 10px;
+ }
+ .btn-fps:hover{
+    background-color:var(--dark-blue);
+    color:#fff;
+ }
+ .box-heading-container{
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 30px;
+    padding-top: 20px;
+}
+.box-value-container .form-group,.box-value-container{
+    background-color: #d1d1d1;
+}
+.box-value-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.log-in-form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in-form-container > .col-md-6{
+    background-color: var(--blue);
+    padding: 5vw;
+}
+.log-in-form-container label{
+    color: #fff;
+}
+.log-in-form-container button{
+    background-color:var(--black);
+    color: #fff;
+    border: 1px solid var(--black);
+    box-shadow: 0px 0px 0px var(--black);
+    margin-right: 10px;
+}
